@@ -17,7 +17,7 @@ def main():
         },
         {
             "name": "Bob Johnson",
-            "email": "bob.johnson@example.co"
+            "email": "bob.johnson@example.com"
         },
         {
             "name": "Alice Williams",
