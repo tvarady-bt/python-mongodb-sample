@@ -30,11 +30,11 @@ def main():
 
     query = {"name": "Bob Johnson"}
 
-    results = collection.find(query)
+    results = list(collection.find(query))
     if len(results) != 1:
         print(f"Incorrect number of results from query: {len(results)}")
     else:
-        print(f"Name: {results[0].name}, Email: {results[0].email}")
+        print(f"Name: {results[0]['name']}, Email: {results[0]['email']}")
 
 if __name__ == "__main__":
     main()
