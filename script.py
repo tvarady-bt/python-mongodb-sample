@@ -25,8 +25,8 @@ def main():
         }
     ]
 
-    inserted_ids = collection.insert_many(data)
-    print(f"Inserted {len(inserted_ids)} results into database")
+    x = collection.insert_many(data)
+    print(f"Inserted {len(x.inserted_ids)} results into database")
 
     query = {"name": "Bob Johnson"}
 
